@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: sans-serif;
+    background-color: #f1f5fa;
+    color: #222;
+}
+
+.booklist {
+    width: 90vh;
+    max-width: 1150px;
+    margin: 5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
